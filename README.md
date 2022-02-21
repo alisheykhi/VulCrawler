@@ -24,7 +24,7 @@ scrapy_fake_useragent
 MySQLdb or MongoDB
 ```
 
-# Run the crawler (via the CLI)
+## Run the crawler (via the CLI)
 
 ```
 $ scrapy startproject attackKB_crawler
