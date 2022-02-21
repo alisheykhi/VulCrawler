@@ -1,28 +1,36 @@
-# Welcome!
-## install requires:
+# VulCrawler!
+
+VulCrawler is a set of crawlers that extracts structured information from almost any vulnerablitiy publisher websites.
+
+## Extracted information
+
+VulCrawler extracts the following attributes from vulnerablitiy publisher websites.
+
+* Title
+* Class
+* CVE
+* Published Date
+* Vulnerable
+* Exploit
+* Solution
+* References_link
+* Patch_file
+* url
+
+## requirements:
 ```
 scrapy
 scrapy_fake_useragent
-MySQLdb
+MySQLdb or MongoDB
 ```
 
-# install
+# Run the crawler (via the CLI)
 
 ```
-1. open cmd and go to working directory
-2. use command "scrapy startproject attackKB_crawler"
-3. open attackKB_crawler directory
-4. open git Bash in current directory
-5. use "git init" to initialize git repository
-6. add remote git repository by "git remote add origin http://31.184.132.183/implementation/crawler.git
-7. use "git pull origin master" and then enter username and pass to pull from origin
+$ scrapy startproject attackKB_crawler
 ```
-
-
-# Using
-
-## Security Focus
-
+### Security Focus
 ```
 scrapy crawl SF -a lbid=100 -a fbid=1 #crawling webpage in range (fbid,lbid). fbid = first bugtraq id and lbid = last bugtraq id
 ```
+
