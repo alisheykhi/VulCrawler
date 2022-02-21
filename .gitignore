@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+*.pyc
+*.egg-info
+build
+setup.py
+test_time.py
+scrapy.cfg
+.idea
